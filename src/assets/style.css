@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Mulish','Trebuchet MS';
+}
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+#banner{
+    width: 100vw;
+    height: 175px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+#header{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2rem;
+    margin-top: 7vh;
+    margin-left: 6vh;
+}
+#iconsContainer{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.icons{
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+nav{
+    bottom:0;
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    font-weight: bold;
+}
+.navbarButtons{
+    cursor: pointer;
+    font-size: 1rem;
+    width: 20%;
+    color:black;
+    border-width: 2px 1px; 
+    border-style: solid; 
+    border-color: lightgray;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbarButtons:hover{
+    background-color: rgb(214, 148, 159); 
+    border:none;
+    color: white;
+    transition: 0.6s;
+}
+#descriptionMainPage{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+#mainPageImg{
+    width: 45vw;
+    margin-top: 7vh;
+    margin-left: 3vw; 
+    box-shadow: 0 0 10px rgb(169, 167, 167);
+    float: left; 
+}
+#textContainer{
+    width: 45vw;
+    flex-direction: column; 
+    margin-top: 50px;
+    margin-left: 3vw;
+    margin-right: 1vw;
+    display: inline-block;
+}
+#mainPage{
+    flex-direction: column;
+}
+#mainPageText{
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 3rem;
+    color: rgb(214, 148, 159);
+    font-weight: bolder;
+}
+#smallText{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+#bookNowButton{
+    color: black;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border-width: 2px; 
+    border-style: solid; 
+    border-color: lightgray;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#bookNowButton:hover{
+    background-color: rgb(214, 148, 159); 
+    color: white;
+    border-color: white;
+    transition: 0.6s;
+}
+@media screen and (max-width: 650px){
+    #iconsContainer{
+        visibility: hidden;
+    }
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+#bookNow{
+    scrollbar-width: none;
+}
+#scrollUpBtn{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    cursor: pointer;
+    background-color:  rgb(214, 148, 159);
+    border-radius: 50%;
+}
+#arrow{
+    font-size: 2rem;
+    color: white;
+    transform: rotate(-90deg);
+    position: relative;
+    top: -4px;
+    left: -1.5px;
+}
+#scrollUpBtn:hover{
+    background-color: white;
+    border: 3px solid rgb(214, 148, 159);
+    width: 41px;
+    height: 41px;
+    #arrow{
+        color:rgb(214, 148, 159);
+    }
+}
+footer{
+    margin-top: 10vh;
+    width: 100vw;
+    height: 150px;
+    background-color: rgb(214, 148, 159);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#linksContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerText{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 20vw;
+}
+.category{
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid lightgray;
+    height: 7vh;
+    line-height: 7vh;
+    width: 50vw;
+}
+ul{
+    margin-top: 3vh;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+.bullet{
+    content: '\0387'; 
+    color: rgb(214, 148, 159); 
+    margin-right: 5px; 
+}
+.price{
+    margin-left: 50px;
+}
+.priceList{
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contactPage{
+    min-height: 50vh;
+    display: flex;
+}
+address{
+    flex: 1;
+    margin-left: 10vw;
+    margin-top: 20vh;
+}
+#salonAddress{
+    display: flex;
+    align-items: center;
+    width: 470px;
+}
+.addressIcons{
+    margin-right: 8px;
+    width: 30px;
+}
+.addressText{
+    margin-top: 2px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+#phoneNumber{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+#email{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+#emailText{
+    margin-top: -5px;
+}
+#openingHours{
+    flex-direction: column;
+    width: 20vw;
+    margin-top: 14vh;
+    margin-right: 16vw;
+    margin-left:0;
+    display: flex;
+}
+#days, #hours{
+    flex:1;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: left;
+    line-height: 30px;
+}
+#openingHoursText{
+    margin-left: -4vw;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+#openingTime{
+    display: flex;
+}
+#slideContainer{
+    margin-top: 5vh;
+    width: 58vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+#slider{
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+    right: 209px;
+}
+.slide{
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slideImg{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+#prevBtn, #nextBtn{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    border: 2px solid lightgray;
+}
+#nextBtn{
+    right: 16vw;
+}
+#prevBtn{
+    left: 16vw;
+}
+#imageSlider{
+    position: relative;
+}
+#prevBtn:hover, #nextBtn:hover{
+    background-color: rgb(214, 148, 159);
+    border-color: rgb(214, 148, 159);
+    color: white;
+    transition: 0.3s;
+}
+.informations{
+    font-size: 1.2rem;
+    width: 550px;
+    height: 100px;
+    font-weight: bolder;
+}
+#aboutSalon{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 0.75fr 0.75fr;
+    margin-left: 100px;
+    gap: 50px;
+}
+.informations::first-line{
+    color: rgb(214, 148, 159);
+    font-size: 1.5rem;
+}
+form{
+    margin-top: 50px;
+    margin-left: 20vw;
+}
+input{
+    height: 70px;
+    width: 400px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+input::placeholder{
+    color:white;
+    font-weight: bolder;
+    padding-left: 25px;
+}
+label{
+    font-size: 1.5rem;
+}
+#date{
+    margin-left: 5px;
+    width: 150px;
+    color:white;
+    font-weight: bolder;
+    padding-left: 25px;
+}
+#hour{
+    width: 144px;
+    margin-left: 5px;
+    padding-left: 25px;
+}
+select{
+    padding-left: 10px;
+    margin-left: 5px;
+    height: 70px;
+    width: 325px;
+    color:white;
+    background-color: lightgray;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+}
+option{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+#submit{
+    color: black;
+    line-height: 60px;
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 400px;
+    width: 200px;
+    height: 60px;
+    border: 2px solid lightgray;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0;
+}
+#submit:hover{
+    background-color: rgb(214, 148, 159); 
+    color: white;
+    border-color: white;
+    transition: 0.6s;
+}
+#ourServices{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.serviceDescription{
+    margin-top: 25px;
+    border: 2px solid lightgray; 
+    width: 80vw;
+    height: 200px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.serviceDescriptionImgContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 200px;
+}
+.serviceDescriptionImg{
+    width: 250px;
+    height: 167px;
+}
+.serviceTitle{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.serviceDescriptionTextContainer{
+    display: flex;
+    flex-direction: column;   
+}
+.serviceTitle{
+    text-align: left;
+    font-weight: bolder;
+    color: rgb(214, 148, 159);
+    font-size: 2.2rem;
+}
+.expandBtn{
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+    font-size: 5rem;
+    color: gray;
+    cursor: pointer;
+}
+.expandBtn:hover{
+    color:rgb(214, 148, 159);
+    transition: 0.5s;
+}
+.serviceDescriptionText{
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-right: 80px;
+    font-size: 1.2rem;
+    line-height: 28px;
+}
