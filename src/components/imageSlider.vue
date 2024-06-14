@@ -1,17 +1,17 @@
 <template>
-    <div id = "imageSlider">
-        <button @click = "prev()" id="prevBtn">&#706;</button>
-        <div id = "slideContainer">
-        <div id = "slider">
-        <div class = "slide">Nails Care<img class = "slideImg" src = "../assets/nail-svgrepo-com.svg"></div>
-        <div class = "slide">Massages<img class = "slideImg" src = "../assets/massage-spa-svgrepo-com.svg"></div>
-        <div class = "slide">Make Up<img class = "slideImg" src = "../assets/lipstick-svgrepo-com.svg"></div>
-        <div class = "slide">Eyebrow Extension<img class = "slideImg" src = "../assets/brow-svgrepo-com.svg"></div>
-        <div class = "slide">Waxing<img class = "slideImg" src = "../assets/wax-svgrepo-com.svg"></div>
-        <div class = "slide">Eyelash Extension<img class = "slideImg" src = "../assets/lashes-svgrepo-com.svg"></div>
+    <div id="imageSlider">
+        <button @click="prev()" id="prevBtn">&#706;</button>
+        <div id="slideContainer">
+        <div id="slider">
+        <div class="slide">Nails Care<img class="slideImg" src="../assets/nail-svgrepo-com.svg"></div>
+        <div class="slide">Massages<img class="slideImg" src="../assets/massage-spa-svgrepo-com.svg"></div>
+        <div class="slide">Make Up<img class="slideImg" src="../assets/lipstick-svgrepo-com.svg"></div>
+        <div class="slide">Eyebrow Extension<img class="slideImg" src="../assets/brow-svgrepo-com.svg"></div>
+        <div class="slide">Waxing<img class="slideImg" src="../assets/wax-svgrepo-com.svg"></div>
+        <div class="slide">Eyelash Extension<img class="slideImg" src="../assets/lashes-svgrepo-com.svg"></div>
     </div>
    </div>
-   <button @click = "next()" id="nextBtn">&#707;</button>
+   <button @click="next()" id="nextBtn">&#707;</button>
     </div>
 </template>
 <script>

@@ -1,13 +1,13 @@
 <template>
-    <div class = "serviceDescription">
-        <div class = "serviceDescriptionImgContainer">
-            <img class = "serviceDescriptionImg" :src ="require(`@/assets/${imgSrc}`)">
+    <div class="serviceDescription">
+        <div class="serviceDescriptionImgContainer">
+            <img class="serviceDescriptionImg" :src="require(`@/assets/${imgSrc}`)">
         </div>
-        <div class = "serviceDescriptionTextContainer" ref="serviceDescriptionTextContainer">
-            <h3 class = "serviceTitle">{{title}}</h3>
-            <p class = "serviceDescriptionText" v-html="formattedDescription"></p>
+        <div class="serviceDescriptionTextContainer" ref="serviceDescriptionTextContainer">
+            <h3 class="serviceTitle">{{title}}</h3>
+            <p class="serviceDescriptionText" v-html="formattedDescription"></p>
         </div>
-        <div @click = "readMore()" class="expandBtn" ref="expandBtn">&#8964;</div>
+        <div @click="readMore()" class="expandBtn" ref="expandBtn">&#8964;</div>
     </div>
 </template>
 <script>

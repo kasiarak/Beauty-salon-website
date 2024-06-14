@@ -1,40 +1,40 @@
 <template>
     <h2>Price list</h2>
-    <h3 class = "category">Massages</h3>
-    <div class = "priceList">
-        <ul v-for="massagePrice in massagePrices" :key = massagePrice.id>
+    <h3 class="category">Massages</h3>
+    <div class="priceList">
+        <ul v-for="massagePrice in massagePrices" :key=massagePrice.id>
         <span class="bullet">&#8226;</span>
         <span class="service">{{ massagePrice.service }}</span>
         <span class="price">{{ massagePrice.price }} £</span>
         </ul>
     </div>
-    <h3 class = "category">Eyebrows & Eyelashes</h3>
-    <div class = "priceList">
-        <ul v-for="lashesBrowsPrice in lashesBrowsPrices" :key = lashesBrowsPrice.id>
+    <h3 class="category">Eyebrows & Eyelashes</h3>
+    <div class="priceList">
+        <ul v-for="lashesBrowsPrice in lashesBrowsPrices" :key=lashesBrowsPrice.id>
         <span class="bullet">&#8226;</span>
         <span class="service">{{ lashesBrowsPrice.service }}</span>
         <span class="price">{{ lashesBrowsPrice.price }} £</span>
         </ul>
     </div>
-    <h3 class = "category">Nails Care</h3>
-    <div class = "priceList">
-        <ul v-for="nailsPrice in nailsPrices" :key = nailsPrice.id>
+    <h3 class="category">Nails Care</h3>
+    <div class="priceList">
+        <ul v-for="nailsPrice in nailsPrices" :key=nailsPrice.id>
         <span class="bullet">&#8226;</span>
         <span class="service">{{ nailsPrice.service }}</span>
         <span class="price">{{ nailsPrice.price }} £</span>
         </ul>
     </div>
-    <h3 class = "category">Waxing</h3>
-    <div class = "priceList">
-        <ul v-for="waxPrice in waxPrices" :key = waxPrice.id>
+    <h3 class="category">Waxing</h3>
+    <div class="priceList">
+        <ul v-for="waxPrice in waxPrices" :key=waxPrice.id>
         <span class="bullet">&#8226;</span>
         <span class="service">{{ waxPrice.service }}</span>
         <span class="price">{{ waxPrice.price }} £</span>
         </ul>
     </div>
-    <h3 class = "category">Make up</h3>
-    <div class = "priceList">
-        <ul v-for="makeupPrice in makeupPrices" :key = makeupPrice.id>
+    <h3 class="category">Make up</h3>
+    <div class="priceList">
+        <ul v-for="makeupPrice in makeupPrices" :key=makeupPrice.id>
         <span class="bullet">&#8226;</span>
         <span class="service">{{ makeupPrice.service }}</span>
         <span class="price">{{ makeupPrice.price }} £</span>

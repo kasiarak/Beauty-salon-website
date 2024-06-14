@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Our Services</h2>
-    <div id = "ourServices">
+    <div id="ourServices">
         <ServiceDescription imgSrc="massage.jpg" title="Massage" description="The use of touch (e.g., massage, deep tissue manipulation, movement awareness, exercise, and others) 
         to either improve bodily structure and function (e.g., circulation and relaxation), or as a therapeutic 
         modality to reduce pain and heal damaged musculoskeletal units.Ideal for those new to bodywork. Any tension, stress, 

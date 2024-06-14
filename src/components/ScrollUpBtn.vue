@@ -1,6 +1,6 @@
 <template>
-    <div id = "scrollUpBtn">
-        <div @click = "scrollUp()" id = "arrow">&#10132;</div>
+    <div id="scrollUpBtn">
+        <div @click="scrollUp()" id="arrow">&#10132;</div>
     </div>
 </template>
 <script>

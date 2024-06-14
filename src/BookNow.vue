@@ -1,20 +1,20 @@
-<template id = "bookNow">
-<div id = "bookNow">
+<template id="bookNow">
+<div id="bookNow">
   <h2>Book Now</h2>  
   <h3 v-if="isSubmitted">&#10003; Your service has been booked! Check the email message.</h3>
 <form @submit.prevent="submit">
-    <input v-model ="name" type="text" placeholder="Name"><br>
-    <input v-model = "surname" type="text" placeholder="Surname"><br>
-    <input v-model = "phoneNumber" type="tel" placeholder="Phone Number"><br>
-    <input v-model = "email" type="email" placeholder="E-mail"><br>
+    <input v-model="name" type="text" placeholder="Name"><br>
+    <input v-model="surname" type="text" placeholder="Surname"><br>
+    <input v-model="phoneNumber" type="tel" placeholder="Phone Number"><br>
+    <input v-model="email" type="email" placeholder="E-mail"><br>
     <label>Date:</label>
-    <input v-model = "selectedDate" id = "date" type="date">
-    <input v-model = "selectedHour" id = "hour" type = "time"><br>
+    <input v-model="selectedDate" id="date" type="date">
+    <input v-model="selectedHour" id="hour" type="time"><br>
     <label>Service:</label>
     <select v-model="selectedService">
         <option v-for="Service in Services" :key=Service.id :value=Service.service>{{ Service.service }}</option>
     </select>
-    <input id = "submit" type="submit" value="Book Now">
+    <input id="submit" type="submit" value="Book Now">
 </form>
 </div>
 
